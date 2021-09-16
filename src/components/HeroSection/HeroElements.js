@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
-//fix the video thing resize it or something 
 export const HeroContainer = styled.div`
     background: #0c0c0c;
     display: flex;
@@ -37,8 +36,6 @@ export const HeroBg = styled.div`
     overflow: hidden;
 `;
 
-//not 100% on having a video, probably will change it to something else
-//unless I find a cool video
 export const VideoBg = styled.video`
     width: 100%;
     height: 100%;
@@ -77,6 +74,7 @@ export const HeroP = styled.div`
     font-size: 30px;
     text-align: center;
     max-width: 600px;
+    text-shadow: 2px 3px 2px black;
 
     @media screen and (max-width: 768px){
         font-size: 30px;

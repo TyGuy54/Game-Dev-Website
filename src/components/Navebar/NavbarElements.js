@@ -98,7 +98,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
-    background: #10bf71;
+    background: #33A0FF;
     white-space: nowrap;
     padding: 10px 22px;
     color: #010606;
@@ -106,6 +106,7 @@ export const NavBtnLink = styled(LinkRouter)`
     outline: none;
     border: none;
     cursor: pointer;
+    font-weight: bold;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
 

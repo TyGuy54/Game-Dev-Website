@@ -24,8 +24,8 @@ export const InfoWrapper = styled.div`
 
 export const InfoRow = styled.div`
     display: grid;
-    grid-auto-column: minmax(auto, 1fr);
-    align-items: center
+    grid-auto-columns: minmax(auto, 1fr);
+    align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
     @media screen and (max-width: 768px){
@@ -46,7 +46,7 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
+    max-width: 500px;
     padding-top: 0;
     padding-bottom: 60px;
 
@@ -58,7 +58,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #0fbf71;
+    color: #33A0FF;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -99,6 +99,6 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 150px 0 10px 0;
     padding-right: 0;
 `;
