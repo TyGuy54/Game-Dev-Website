@@ -1,11 +1,11 @@
-export const HomeObjOne = {
-    id: 'about',
+export const GameObjOne = {
+    id: 'gamedungen',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
     topLine: 'TyGuy Studios',
     headLine: 'Wanna check out some cool games?',
-    description: 'Click here for a list of games that is have made!',
+    description: 'Click here to enter the Game Dungen!',
     buttonLabal: 'Enter',
     imgStart: false,
     img: require('../../images/svg-1.svg').default,

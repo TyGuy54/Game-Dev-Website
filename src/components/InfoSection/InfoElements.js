@@ -3,9 +3,11 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+    margin-top: 210px;
 
     @media screen and ( max-width: 768px) {
         padding: 100px 0;
+        margin-top: 100px
     }
 
 `;
@@ -99,6 +101,6 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
     width: 100%;
-    margin: 150px 0 10px 0;
+    margin: 150px 0 150px 0;
     padding-right: 0;
 `;
