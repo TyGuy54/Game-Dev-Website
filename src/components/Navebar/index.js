@@ -1,4 +1,3 @@
-import React from 'react';
 import {FaBars} from 'react-icons/fa'
 import {
     Nav, 
@@ -11,6 +10,7 @@ import {
     NavBtn,
     NavBtnLink
 } from './NavbarElements';
+import { useState } from 'react';
 
 const Navbar = ({toggle}) => {
     return (
