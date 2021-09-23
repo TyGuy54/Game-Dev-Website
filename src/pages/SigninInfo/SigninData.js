@@ -36,6 +36,8 @@ export const SignInForom = styled.div`
 // box-shadow: 0px 0px 50px #33a0ff inset;
 // `;
 
+
+
 export const SignInName = styled.div`
     display: grid;
     z-index: 1;

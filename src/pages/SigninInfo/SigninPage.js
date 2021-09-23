@@ -21,7 +21,7 @@ const SigninPage = () => {
               <FirebaseUser action={ signInOrUp } />
             ) : (
               <>
-                <TyguyLogo>Tyguy Studios</TyguyLogo>
+                <TyguyLogo>TyGuy Studios</TyguyLogo>
                   <SignInForom>
                     <SignInName>
                       <SignInButton type="button" onClick={ () => setSignInOrUp("signin") } >Log in with existing user</SignInButton>

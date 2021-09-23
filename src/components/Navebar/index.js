@@ -10,7 +10,7 @@ import {
     NavBtn,
     NavBtnLink
 } from './NavbarElements';
-import { useState } from 'react';
+//import { useState } from 'react';
 
 const Navbar = ({toggle}) => {
     return (

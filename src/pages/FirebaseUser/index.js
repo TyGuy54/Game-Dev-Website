@@ -2,6 +2,15 @@ import React, { useState } from 'react';
 import { useFirebaseApp } from 'reactfire';
 import 'firebase/auth';
 
+import {
+    FirebseInputContainer,
+    TyguyLogoInput,
+    SignOrUpBtn,
+    UserInputEmail,
+    UserInputPassword,
+    UserInfo
+} from "./FireBaseElements"
+
 const useField = () => {
     const [ value, setValue ] = useState("");
 	return { value, onChange: x => setValue( 'string' === typeof x ? x : x.target.value ) };
@@ -47,24 +56,29 @@ function FirebaseUser ( { action = 'signin' }) {
         };
 
     return (
-        <div>
-            {
-                auth ? (
-                    <p>{ manage.success }</p>
-                ) : (
-                    <>
-                        <form onSubmit={ manage.method }>
-                            <input { ...email } placeholder="Email" />
-                            <input { ...password } type=")Password" placeholder="password" />
-                            <button type="submit">{ manage.label }</button>
-                            {
-                                error && <p>{ error }</p>
-                            }
-                        </form>
-                    </>
-                )
-            }
-        </div>
+        <FirebseInputContainer>
+            <div>
+                {
+                    auth ? (
+                        <p>{ manage.success }</p>
+                    ) : (
+                        <>
+                            <TyguyLogoInput>TyGuy Studios</TyguyLogoInput>
+                            <form onSubmit={ manage.method }>
+                                <UserInfo>
+                                    <UserInputEmail { ...email } placeholder="Email" />
+                                    <UserInputPassword { ...password } type="password" placeholder="Password" />
+                                    <SignOrUpBtn type="submit">{ manage.label }</SignOrUpBtn>
+                                </UserInfo>
+                                {
+                                    error && <p>{ error }</p>
+                                }
+                            </form>
+                        </>
+                    )
+                }
+            </div>
+        </FirebseInputContainer>
     );
 }
 
