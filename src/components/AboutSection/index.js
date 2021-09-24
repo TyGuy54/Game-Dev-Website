@@ -15,7 +15,8 @@ import {
     AboutBtn
  } from "./aboutElements";
 
-const AboutSection = ({topLine, 
+const AboutSection = ({
+    topLine, 
     headLine, 
     description, 
     img, 
@@ -37,18 +38,7 @@ const AboutSection = ({topLine,
                                 <AboutTopLine>{topLine}</AboutTopLine>
                                 <AboutHeading>{headLine}</AboutHeading>
                                 <AboutInfo>{description}</AboutInfo>
-                                <AboutBtn>
-                                    <Button to="about"
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
-                                    dark2={dark2 ? 1 : 0}
-                                >{buttonLabal}</Button>
-                                </AboutBtn>
+                                <AboutBtn to="/about"></AboutBtn>
                             </TextWrapper>
                         </AboutColumn1>
                         <AboutColumn2>

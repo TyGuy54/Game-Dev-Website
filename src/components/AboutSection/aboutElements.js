@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link as LinkRouter} from 'react-router-dom';
 
 export const AboutContainer = styled.div`
     color: #fff;
@@ -87,9 +88,10 @@ export const AboutInfo = styled.p`
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')}
 `;
 
-export const AboutBtn = styled.div`
+export const AboutBtn = styled(LinkRouter)`
     display: flex;
     justify-content: flex-start;
+    outline: none;
 `;
 
 export const AboutImgWrap = styled.div`

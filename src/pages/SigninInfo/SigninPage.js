@@ -1,14 +1,12 @@
 import React, {useState} from 'react'
 import FirebaseUser from '../FirebaseUser';
-
 import {
     SignInName,
     SignInButton,
     SigninContainer,
     SignInPass,
     TyguyLogo,
-    SignInForom,
-    //TestBox
+    SignInForom
 } from "./SigninData"
 
 const SigninPage = () => {

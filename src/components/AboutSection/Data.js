@@ -1,5 +1,6 @@
 export const AboutbjOne = {
     id: 'about',
+    to: '/about',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
