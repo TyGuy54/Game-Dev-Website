@@ -6,6 +6,8 @@ import InfoSection from '../components/InfoSection';
 import { GameObjOne } from '../components/InfoSection/Data';
 import Navbar from '../components/Navebar';
 import SideBar from '../components/sidebar';
+import AboutInfo from './AboutPageInfo/AboutInfo';
+import { AboutInfoObj } from './AboutPageInfo/AboutInfoData';
 
 const Home = () => {
     //useing usestate to open and close the navbar
@@ -14,8 +16,6 @@ const Home = () => {
     const toggle = () => {
         setIsOpen(!isOpen)
     };
-
-
     return (
         <>
             <Navbar toggle={toggle}/>

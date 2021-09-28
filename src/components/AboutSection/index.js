@@ -38,7 +38,7 @@ const AboutSection = ({
                                 <AboutTopLine>{topLine}</AboutTopLine>
                                 <AboutHeading>{headLine}</AboutHeading>
                                 <AboutInfo>{description}</AboutInfo>
-                                <AboutBtn to="/about"></AboutBtn>
+                                <AboutBtn to="/about">Enter</AboutBtn>
                             </TextWrapper>
                         </AboutColumn1>
                         <AboutColumn2>

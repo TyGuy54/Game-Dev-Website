@@ -89,9 +89,24 @@ export const AboutInfo = styled.p`
 `;
 
 export const AboutBtn = styled(LinkRouter)`
-    display: flex;
-    justify-content: flex-start;
+    border-radius: 50px;
+    background: #33A0FF;
+    white-space: nowrap;
+    padding: 15px 45px;
+    color: #010606;
+    font-size: 20px;
     outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover{
+        trasnistion: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+    }
 `;
 
 export const AboutImgWrap = styled.div`
